@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="789.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.management.controller.FoodItemFormController">
+   <children>
+      <Label layoutX="77.0" layoutY="59.0" opacity="0.4" text="Food Items">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="250.0" fitWidth="210.0" layoutX="82.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -20;">
+         <image>
+            <Image url="@../image/NewFolder/9.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="212.0" layoutX="116.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -20;">
+         <image>
+            <Image url="@../image/NewFolder/10.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="217.0" layoutX="172.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -20;">
+         <image>
+            <Image url="@../image/NewFolder/12.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="226.0" layoutX="1085.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/NewFolder/14.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="211.0" layoutX="1094.0" layoutY="362.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NewFolder/11.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="217.0" layoutX="1095.0" layoutY="569.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NewFolder/13.PNG" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#093865" height="505.0" layoutX="403.0" layoutY="191.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="557.0" />
+      <Label layoutX="444.0" layoutY="245.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F001.Burger">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="286.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F002.Hotdog">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="325.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F003.Chips">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="363.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F004.Cookie">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="402.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F005.Donut">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="441.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F006.Cake Piese">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="479.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F007.Muffines">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="518.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F008.Sandwich">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="561.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F009.Chicken Nugget">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="604.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F010.Pan Pizza">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="244.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="350.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="285.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="320.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="324.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="280.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="362.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="120.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="401.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="150.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="440.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="300.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="728.0" layoutY="478.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="180.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="641.0" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: white;" text="F011.Mozzarella Stick">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="728.0" layoutY="517.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="200.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="728.0" layoutY="560.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="250.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="603.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="400.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="729.0" layoutY="640.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" text="250.00">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="199.0" opacity="0.37" style="-fx-background-color: navy blue; -fx-background-radius: 10;" text="Food Name" textFill="#f8f4f4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="698.0" layoutY="199.0" opacity="0.37" prefHeight="21.0" prefWidth="61.0" style="-fx-background-color: navy blue; -fx-background-radius: 10;" text="Price" textFill="#fffefe">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 10;">
+         <image>
+            <Image url="@../image/NewFolder/15.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="911.0" layoutY="671.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/NewFolder/16.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

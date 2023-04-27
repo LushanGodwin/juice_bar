@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="789.0" prefWidth="1334.0" style="-fx-background-color: tranceparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.management.controller.BeveragesFormController">
+   <children>
+      <Label layoutX="87.0" layoutY="7.0" opacity="0.4" text="Beverages">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="236.0" fitWidth="987.0" layoutX="163.0" layoutY="114.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NewFolder/17.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="597.0" layoutX="342.0" layoutY="445.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NewFolder/18.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="197.0" layoutY="362.0" text="Stoberry juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="396.0" text="500.00" />
+      <Label layoutX="370.0" layoutY="364.0" text="Orange juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="398.0" text="180.00" />
+      <Label layoutX="527.0" layoutY="365.0" text="Avocado juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="399.0" text="350.00" />
+      <Label layoutX="712.0" layoutY="362.0" text="Mix juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="738.0" layoutY="396.0" text="750.00" />
+      <Label layoutX="1004.0" layoutY="362.0" text="Grapes juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1042.0" layoutY="396.0" text="300.00" />
+      <Label layoutX="844.0" layoutY="363.0" text="Banana juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="897.0" layoutY="397.0" text="200.00" />
+      <Label layoutX="337.0" layoutY="708.0" text="Lemon juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="742.0" text="150.00" />
+      <Label layoutX="716.0" layoutY="708.0" text="Grapes juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="742.0" text="300.00" />
+      <Label layoutX="488.0" layoutY="709.0" text="Promegranate juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="743.0" text="400.00" />
+      <Label layoutX="864.0" layoutY="710.0" text="Apple juice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="897.0" layoutY="744.0" text="280.00" />
+      <Label layoutX="258.0" layoutY="138.0" text="J001">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="138.0" text="J002">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="138.0" text="J003">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="729.0" layoutY="138.0" text="J004">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="138.0" text="J005">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1035.0" layoutY="138.0" text="J006">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="549.0" text="J007">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="527.0" layoutY="549.0" text="J008">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="672.0" layoutY="549.0" text="J009">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="809.0" layoutY="549.0" text="J010">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

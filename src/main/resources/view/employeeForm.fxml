@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="789.0" prefWidth="1334.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.management.controller.EmployeeFormController">
+   <children>
+      <Label layoutX="57.0" layoutY="39.0" opacity="0.4" text="Employee Manage Form">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmployeeId" layoutX="44.0" layoutY="290.0" onAction="#txtEmployeeIdOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Employee Id" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeName" layoutX="44.0" layoutY="359.0" prefHeight="44.0" prefWidth="380.0" promptText="Employee Name" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeAddress" layoutX="44.0" layoutY="438.0" prefHeight="44.0" prefWidth="380.0" promptText="Employee Address" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeContact" layoutX="43.0" layoutY="509.0" prefHeight="44.0" prefWidth="380.0" promptText="Employee Contact" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="43.0" layoutY="678.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="86.0" style="-fx-background-radius: 20; -fx-background-color: #23395d;" text="Save" textFill="#fcf9f9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="170.0" layoutY="679.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="99.0" style="-fx-background-radius: 20; -fx-background-color: #23395d;" text="Update" textFill="#f8f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="303.0" layoutY="679.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="99.0" style="-fx-background-radius: 20; -fx-background-color: #23395d;" text="Delete" textFill="#f2ebeb">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblEmployee" layoutX="541.0" layoutY="157.0" prefHeight="581.0" prefWidth="729.0">
+        <columns>
+          <TableColumn fx:id="colEmployeeId" prefWidth="143.0" text="empId" />
+          <TableColumn fx:id="colEmployeeName" prefWidth="172.0" text="empName" />
+            <TableColumn fx:id="colEmployeeAddress" prefWidth="209.0" text="empAddress" />
+            <TableColumn fx:id="colEmployeeContact" prefWidth="204.0" text="empContact" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

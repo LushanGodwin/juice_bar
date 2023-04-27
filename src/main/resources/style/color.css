@@ -1,0 +1,7 @@
+.div {
+    -fx-background-color: linear-gradient(to bottom, #000066 0%, #33ccff 100%);
+}
+
+#btnCustomer:hover{
+    -fx-opacity: 50;
+}

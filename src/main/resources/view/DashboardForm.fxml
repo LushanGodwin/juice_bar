@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.lab.GNCalendarTile?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.management.controller.DashboardFormController">
+    <children>
+        <ImageView fitHeight="789.0" fitWidth="1500.0" pickOnBounds="true">
+            <image>
+                <Image url="@../image/macbook_pro_14____2.JPG" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="pane" layoutX="166.0" prefHeight="789.0" prefWidth="1334.0">
+            <children>
+            <AnchorPane layoutX="941.0" layoutY="51.0" opacity="0.8" prefHeight="152.0" prefWidth="298.0" style="-fx-background-color: F0F0F0; -fx-background-radius: 20;" />
+                <BarChart fx:id="barGrapch" alternativeColumnFillVisible="true" layoutX="38.0" layoutY="113.0" prefHeight="425.0" prefWidth="764.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+                <PieChart layoutX="113.0" layoutY="611.0" prefHeight="143.0" prefWidth="307.0" style="-fx-background-color: #2A2F4F; -fx-background-radius: 20;" />
+                <Label layoutX="38.0" layoutY="84.0" text="Customer Report" textFill="#fffdfd">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="127.0" layoutY="627.0" prefHeight="73.0" prefWidth="285.0" text="Total Orders" textFill="WHITE">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblDate" layoutX="965.0" layoutY="66.0" text="2023.03.21" textFill="#727272">
+                    <font>
+                        <Font size="52.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblTime" layoutX="968.0" layoutY="135.0" text="06:23 am" textFill="#727272">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="434.0" layoutY="23.0" opacity="0.4" text="Dashboard">
+                    <font>
+                        <Font name="Malithi Web" size="72.0" />
+                    </font>
+                </Label>
+                <GNCalendarTile fx:id="calender" layoutX="886.0" layoutY="247.0" prefHeight="282.0" prefWidth="362.0" style="-fx-background-radius: 25;" styleClass="calender" stylesheets="@../style/fruitfulDelight.css" />
+            <PieChart layoutX="479.0" layoutY="611.0" prefHeight="143.0" prefWidth="307.0" style="-fx-background-color: #2A2F4F; -fx-background-radius: 20;" />
+            <Label fx:id="lblTotalOrders" alignment="CENTER" layoutX="124.0" layoutY="697.0" prefHeight="45.0" prefWidth="285.0" text="00" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalCustomer" alignment="CENTER" layoutX="491.0" layoutY="697.0" prefHeight="45.0" prefWidth="285.0" text="00" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="490.0" layoutY="627.0" prefHeight="73.0" prefWidth="285.0" text="Total Customer" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <JFXButton fx:id="btnCustomer" layoutX="23.0" layoutY="86.0" onAction="#btnCustomerOnAction" prefHeight="80.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="72.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/2.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnOrder" layoutX="26.0" layoutY="174.0" onAction="#btnOrderOnAction" prefHeight="86.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="67.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/5.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnItem" layoutX="22.0" layoutY="266.0" onAction="#btnItemOnAction" prefHeight="86.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/4.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnEmployee" layoutX="23.0" layoutY="358.0" onAction="#btnEmployeeOnAction" prefHeight="84.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="67.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/1.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnSupplier" layoutX="24.0" layoutY="451.0" onAction="#btnSupplierOnAction" prefHeight="80.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="67.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/3.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <JFXButton fx:id="btnBack" disable="true" focusTraversable="false" layoutX="23.0" layoutY="630.0" onAction="#btnBackOnAction" prefHeight="80.0" prefWidth="115.0" text=" ">
+            <graphic>
+                <ImageView fitHeight="80.0" fitWidth="80.0" onDragDetected="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/NewFolder/b.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="789.0" prefWidth="1334.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.management.controller.SupplierFormController">
+   <children>
+      <Label layoutX="57.0" layoutY="39.0" opacity="0.4" text="Supplier Manage Form">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSupplierId" layoutX="44.0" layoutY="290.0" onAction="#txtSupplierIdOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Supplier Id" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplierName" layoutX="44.0" layoutY="359.0" prefHeight="44.0" prefWidth="380.0" promptText="Supplier Name" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplierAddress" layoutX="44.0" layoutY="438.0" prefHeight="44.0" prefWidth="380.0" promptText="Supplier Address" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplierContact" layoutX="44.0" layoutY="509.0" prefHeight="44.0" prefWidth="380.0" promptText="Supplier Contact" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="49.0" layoutY="678.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #23395d; -fx-background-radius: 20;" text="Save" textFill="#fcf7f7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="185.0" layoutY="680.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="99.0" style="-fx-background-color: #23395d; -fx-background-radius: 20;" text="Update" textFill="#fcf7f7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="335.0" layoutY="680.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="99.0" style="-fx-background-color: #23395d; -fx-background-radius: 20;" text="Delete" textFill="#fcf7f7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblSupplier" layoutX="541.0" layoutY="157.0" prefHeight="581.0" prefWidth="729.0">
+        <columns>
+          <TableColumn fx:id="colSupId" prefWidth="145.0" text="supId" />
+          <TableColumn fx:id="colSupName" prefWidth="172.0" text="supName" />
+            <TableColumn fx:id="colSupAddress" prefWidth="198.0" text="supAddress" />
+            <TableColumn fx:id="colSupContact" prefWidth="212.0" text="supContact" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

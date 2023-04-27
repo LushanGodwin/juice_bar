@@ -1,0 +1,73 @@
+.edge-button {
+    -fx-border-radius-color:#0652DD;
+    -fx-background-radius: 50px 50px 50px 50px;
+}
+
+.a{
+    -fx-border-radius: 20px;
+    -fx-background-color:#c6c6c6;
+}
+
+.calender{
+    -fx-font-size: 14;
+    -fx-prompt-text-fill: #68226b;
+    -fx-background-color: #c2aefa;
+    //-fx-background-color: #68226b;
+    -fx-border-radius: 15px;
+}
+
+.linear-grad
+{
+    -fx-background-color: linear-gradient(to bottom left, #130f40, #7ed6df );
+}
+
+
+.linear-Colour
+{
+    -fx-background-color: linear-gradient(to bottom left,#30336b,  #30336b,#30336b);
+}
+
+
+.linear-cw
+{
+    -fx-background-color: linear-gradient(to bottom left,#ecf0f1,#7f8c8d);
+}
+
+.linear-cb
+{
+    -fx-background-color: linear-gradient(to bottom left,#2e86de,#00d2d3);
+}
+
+
+.linear-ccc
+{
+    -fx-background-color: linear-gradient(to bottom left,#4a69bd,#78e08f);
+}
+
+
+.linear-cgr
+{
+    -fx-background-color: linear-gradient(to bottom left,#55efc4,#ff7675);
+}
+
+
+.linear-cgb
+{
+    -fx-background-color: linear-gradient(to bottom left,#54a0ff,#00d2d3);
+}
+
+.edgez-button {
+    -fx-border-radius-color:#0652DD;
+    -fx-background-radius:   50px 50px;
+}
+
+.btnSide {
+
+    -fx-text-fill: #ffffff;
+}
+
+
+.btnSide:hover {
+    -fx-background-color: #130f40;
+    -fx-text-fill: #c7ecee;
+}
