@@ -12,7 +12,7 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-            Parent root = FXMLLoader.load(getClass().getResource("/view/startForm.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/DashboardForm.fxml"));
             stage.setTitle("Welcome Form");
             stage.centerOnScreen();
             stage.setScene(new Scene(root));

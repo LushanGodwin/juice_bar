@@ -14,6 +14,16 @@ public class SupplierModel {
         return CrudUtil.execute(sql,supplier.getSupplierId(),supplier.getSupplierName(),supplier.getSupplierContact(),supplier.getSupplierAddress());
     }
 
+    public static boolean update(Supplier supplier) throws SQLException {
+        String sql = "UPDATE supplier SET supply_name = ?,supply_address = ?,supply_contact =? WHERE supply_id =?";
+        return CrudUtil.execute(sql,supplier.getSupplierName(),supplier.getSupplierAddress(),supplier.getSupplierContact(),supplier.getSupplierId());
+    }
+
+    public static boolean remove(String supplierId) throws SQLException {
+        String sql = "DELETE FROM supplier WHERE supply_id = ?";
+        return CrudUtil.execute(sql,supplierId);
+    }
+
     public static Supplier get(String supplierId) throws SQLException {
         String sql = "SELECT * FROM supplier WHERE supply_id = ?";
         ResultSet resultSet = CrudUtil.execute(sql, supplierId);
@@ -29,15 +39,5 @@ public class SupplierModel {
         while (resultSet.next()){
             data.add(new Supplier(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4)));
         }return data;
-    }
-
-    public static boolean update(Supplier supplier) throws SQLException {
-        String sql = "UPDATE supplier SET supply_name = ?,supply_address = ?,supply_contact =? WHERE supply_id =?";
-        return CrudUtil.execute(sql,supplier.getSupplierName(),supplier.getSupplierAddress(),supplier.getSupplierContact(),supplier.getSupplierId());
-    }
-
-    public static boolean remove(String supplierId) throws SQLException {
-        String sql = "DELETE FROM supplier WHERE supply_id = ?";
-        return CrudUtil.execute(sql,supplierId);
     }
 }

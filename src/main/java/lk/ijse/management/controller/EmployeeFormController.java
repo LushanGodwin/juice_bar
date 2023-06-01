@@ -62,6 +62,7 @@ public class EmployeeFormController implements Initializable {
     @FXML
     private TableColumn<?, ?> colEmployeeContact;
 
+    ObservableList<Employee> observableList = FXCollections.observableArrayList();
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
@@ -78,7 +79,8 @@ public class EmployeeFormController implements Initializable {
                     txtEmployeeName.setText("");
                     txtEmployeeAddress.setText("");
                     txtEmployeeContact.setText("");
-                    tblEmployee.refresh();
+                    observableList.clear();
+                    getAll();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Employee Not Deleted !").show();
                 }
@@ -123,6 +125,7 @@ public class EmployeeFormController implements Initializable {
                     txtEmployeeName.setText("");
                     txtEmployeeAddress.setText("");
                     txtEmployeeContact.setText("");
+                    observableList.clear();
                     getAll();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Employee Not Added !").show();
@@ -138,7 +141,7 @@ public class EmployeeFormController implements Initializable {
         String id = txtEmployeeId.getText();
         String contact = txtEmployeeContact.getText();
         boolean isValid = true;
-        if (!RegexPatterns.getCustomerIdPattern().matcher(id).matches()){
+        if (!RegexPatterns.getEmpIdPattern().matcher(id).matches()){
             new Alert(Alert.AlertType.ERROR,"Invalid Employee Id!").show();
             isValid = false;
         } else if (!RegexPatterns.getMobilePattern().matcher(contact).matches()){
@@ -164,7 +167,8 @@ public class EmployeeFormController implements Initializable {
                 txtEmployeeName.setText("");
                 txtEmployeeAddress.setText("");
                 txtEmployeeContact.setText("");
-                tblEmployee.refresh();
+                observableList.clear();
+                getAll();
             }else {
                 new Alert(Alert.AlertType.ERROR,"Employee Not Updated !").show();
             }} catch (SQLException e) {

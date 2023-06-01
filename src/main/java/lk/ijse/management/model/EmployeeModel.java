@@ -20,17 +20,17 @@ public class EmployeeModel {
         return CrudUtil.execute(sql,employeeId);
     }
 
+    public static boolean update(Employee employee) throws SQLException {
+        String sql = "UPDATE employee SET employee_name = ?,employee_address = ?,employee_contact = ? WHERE employee_id =?";
+        return CrudUtil.execute(sql,employee.getEmployeeName(),employee.getEmployeeAddress(),employee.getEmployeeContact(),employee.getEmployeeId());
+    }
+
     public static Employee get(String employeeId) throws SQLException {
         String sql = "SELECT * FROM employee WHERE employee_id = ?";
         ResultSet resultSet = CrudUtil.execute(sql,employeeId);
         if(resultSet.next()){
             return new Employee(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4));
         } return null;
-    }
-
-    public static boolean update(Employee employee) throws SQLException {
-        String sql = "UPDATE employee SET employee_name = ?,employee_address = ?,employee_contact = ? WHERE employee_id =?";
-        return CrudUtil.execute(sql,employee.getEmployeeName(),employee.getEmployeeAddress(),employee.getEmployeeContact(),employee.getEmployeeId());
     }
 
     public static List<Employee> getAll() throws SQLException {

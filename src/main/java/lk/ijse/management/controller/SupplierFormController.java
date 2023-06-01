@@ -61,6 +61,8 @@ public class SupplierFormController implements Initializable {
     @FXML
     private TableColumn<?, ?> colSupContact;
 
+    ObservableList<Supplier> observableList = FXCollections.observableArrayList();
+
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
         String supplierId = txtSupplierId.getText();
@@ -76,6 +78,8 @@ public class SupplierFormController implements Initializable {
                     txtSupplierName.setText("");
                     txtSupplierAddress.setText("");
                     txtSupplierContact.setText("");
+                    observableList.clear();
+                    getAll();
                 }else {
                     new Alert(Alert.AlertType.ERROR,"Supplier Not Deleted !").show();
                 }
@@ -102,6 +106,7 @@ public class SupplierFormController implements Initializable {
                     txtSupplierName.setText("");
                     txtSupplierAddress.setText("");
                     txtSupplierContact.setText("");
+                    observableList.clear();
                     getAll();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Supplier Not Added !").show();
@@ -110,14 +115,38 @@ public class SupplierFormController implements Initializable {
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR,"Sql Error !").show();
         }
+    }
 
+    @FXML
+    void btnUpdateOnAction(ActionEvent event) {
+        String supplierId = txtSupplierId.getText();
+        String supplierName = txtSupplierName.getText();
+        String supplierAddress = txtSupplierAddress.getText();
+        String supplierContact = txtSupplierContact.getText();
+
+        try {
+            boolean isUpdate = SupplierModel.update(new Supplier(supplierId,supplierName,supplierAddress,supplierContact));
+            if(isUpdate){
+                new Alert(Alert.AlertType.CONFIRMATION,"Supplier Updates !").show();
+                txtSupplierId.setText("");
+                txtSupplierName.setText("");
+                txtSupplierAddress.setText("");
+                txtSupplierContact.setText("");
+                observableList.clear();
+                getAll();
+            }else {
+                new Alert(Alert.AlertType.ERROR,"Supplier not Update !").show();
+            }
+        } catch (SQLException e) {
+            new Alert(Alert.AlertType.ERROR,"Sql Error !").show();
+        }
     }
 
     private boolean checkValid() {
         String id = txtSupplierId.getText();
         String contact = txtSupplierContact.getText();
         boolean isValid = true;
-        if (!RegexPatterns.getCustomerIdPattern().matcher(id).matches()){
+        if (!RegexPatterns.getSupplierIdPattern().matcher(id).matches()){
             new Alert(Alert.AlertType.ERROR,"Invalid Supplier Id!").show();
             isValid = false;
         } else if (!RegexPatterns.getMobilePattern().matcher(contact).matches()){
@@ -141,29 +170,6 @@ public class SupplierFormController implements Initializable {
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR,"Sql Error !").show();
             //e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void btnUpdateOnAction(ActionEvent event) {
-        String supplierId = txtSupplierId.getText();
-        String supplierName = txtSupplierName.getText();
-        String supplierAddress = txtSupplierAddress.getText();
-        String supplierContact = txtSupplierContact.getText();
-
-        try {
-            boolean isUpdate = SupplierModel.update(new Supplier(supplierId,supplierName,supplierAddress,supplierContact));
-            if(isUpdate){
-                new Alert(Alert.AlertType.CONFIRMATION,"Supplier Updates !").show();
-                txtSupplierId.setText("");
-                txtSupplierName.setText("");
-                txtSupplierAddress.setText("");
-                txtSupplierContact.setText("");
-            }else {
-                new Alert(Alert.AlertType.ERROR,"Supplier not Update !").show();
-            }
-        } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR,"Sql Error !").show();
         }
     }
 

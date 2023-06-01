@@ -15,8 +15,7 @@ public class ItemModel {
         ResultSet resultSet = CrudUtil.execute(sql, itemId);
 
         if(resultSet.next()){
-            return (new Item(resultSet.getString(1),resultSet.getString(2),
-                    resultSet.getDouble(3),resultSet.getString(4)));
+            return (new Item(resultSet.getString(1),resultSet.getString(2),resultSet.getDouble(3),resultSet.getString(4)));
         }
         return null;
     }

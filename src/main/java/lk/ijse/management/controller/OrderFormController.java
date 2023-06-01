@@ -324,7 +324,6 @@ public class OrderFormController implements Initializable {
             Item item = ItemModel.searchById(itemId);
             txtItemName.setText(item.getItem_name());
             txtItemPrice.setText(String.valueOf(item.getItem_price()));
-            txtQtyOnHand.setText(item.getItem_qty());
 
             txtQty.requestFocus();
         } catch (SQLException e) {

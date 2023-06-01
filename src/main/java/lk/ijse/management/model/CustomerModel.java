@@ -15,14 +15,6 @@ public class CustomerModel {
         return CrudUtil.execute(sql,customer.getCustomerId(),customer.getCustomerName(),customer.getCustomerAddress(),customer.getCustomerContact());
     }
 
-    public static Customer get(String txtCustomerId) throws SQLException {
-        String sql = "SELECT * FROM customer WHERE cust_id = ?";
-        ResultSet resultSet = CrudUtil.execute(sql,txtCustomerId);
-        if(resultSet.next()){
-            return new Customer(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4));
-        } return null;
-    }
-
     public static boolean update(Customer customer) throws SQLException {
         String sql = "UPDATE customer SET cust_name = ?,cust_address = ?,cust_contact = ? WHERE cust_id =?";
         return CrudUtil.execute(sql,customer.getCustomerName(),customer.getCustomerAddress(),customer.getCustomerContact(),customer.getCustomerId());
@@ -32,6 +24,14 @@ public class CustomerModel {
     public static boolean remove(String customerId) throws SQLException {
         String sql = "DELETE FROM customer WHERE cust_id = ?";
         return CrudUtil.execute(sql,customerId);
+    }
+
+    public static Customer get(String txtCustomerId) throws SQLException {
+        String sql = "SELECT * FROM customer WHERE cust_id = ?";
+        ResultSet resultSet = CrudUtil.execute(sql,txtCustomerId);
+        if(resultSet.next()){
+            return new Customer(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4));
+        } return null;
     }
 
     public static List<Customer> getAll() throws SQLException {

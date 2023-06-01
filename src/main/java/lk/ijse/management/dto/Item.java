@@ -12,5 +12,5 @@ public class Item {
     String item_id;
     String item_name;
     Double item_price;
-    String item_qty;
+    String item_type;
 }
