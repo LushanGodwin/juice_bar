@@ -30,18 +30,18 @@ public class ItemModel {
 
     }
 
-    public static boolean updateQty(List<Cart> cartDTOList) throws SQLException {
-        for (Cart dto : cartDTOList) {
-            if (!updateQty(dto)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private static boolean updateQty(Cart dto) throws SQLException {
-        String sql = "UPDATE item SET item_qty = (item_qty - ?) WHERE item_id = ?";
-        return CrudUtil.execute(sql, dto.getQty(), dto.getCode());
-    }
+//    public static boolean updateQty(List<Cart> cartDTOList) throws SQLException {
+//        for (Cart dto : cartDTOList) {
+//            if (!updateQty(dto)) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+//
+//    private static boolean updateQty(Cart dto) throws SQLException {
+//        String sql = "UPDATE item SET item_qty = (item_qty - ?) WHERE item_id = ?";
+//        return CrudUtil.execute(sql,dto.getQty(),dto.getCode());
+//    }
 
 }

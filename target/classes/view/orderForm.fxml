@@ -55,17 +55,12 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="837.0" layoutY="279.0" text="Qty On Hand :">
+      <Label layoutX="837.0" layoutY="274.0" text="Qty :">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="837.0" layoutY="336.0" text="Qty :">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <JFXTextField fx:id="txtQty" layoutX="1042.0" layoutY="327.0" opacity="0.7" style="-fx-background-color: white;">
+      <JFXTextField fx:id="txtQty" layoutX="1042.0" layoutY="265.0" opacity="0.7" style="-fx-background-color: white;">
          <font>
             <Font size="18.0" />
          </font>
@@ -79,7 +74,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton fx:id="btnAddToCart" layoutX="1073.0" layoutY="414.0" onAction="#btnAddToCartOnAction" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #203354#203354;" text="      Add to cart" textFill="WHITE">
+      <JFXButton fx:id="btnAddToCart" layoutX="1073.0" layoutY="364.0" onAction="#btnAddToCartOnAction" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #203354#203354;" text="      Add to cart" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -128,15 +123,11 @@
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label fx:id="txtQtyOnHand" layoutX="967.0" layoutY="279.0" prefHeight="27.0" prefWidth="150.0">
-         <font>
-            <Font size="20.0" />
-         </font></Label>
       <Label fx:id="lblNetTotal" layoutX="171.0" layoutY="694.0" prefHeight="27.0" prefWidth="150.0" textFill="RED">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnReport" layoutX="1082.0" layoutY="479.0" onAction="#btnReportOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #245953;" text="Report" textFill="WHITE" />
+      <JFXButton fx:id="btnReport" layoutX="1082.0" layoutY="447.0" onAction="#btnReportOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #245953;" text="Report" textFill="WHITE" />
    </children>
 </AnchorPane>

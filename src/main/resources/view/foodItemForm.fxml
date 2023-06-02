@@ -18,24 +18,24 @@
             <Image url="@../image/NewFolder/food01.PNG" />
          </image>
       </ImageView>
-      <TableView fx:id="tblCustomer" layoutX="557.0" layoutY="82.0" prefHeight="690.0" prefWidth="759.0">
+      <TableView fx:id="tblFood" layoutX="557.0" layoutY="82.0" prefHeight="690.0" prefWidth="759.0">
          <columns>
-            <TableColumn fx:id="colItemId" prefWidth="213.33331298828125" text="itemId" />
-            <TableColumn fx:id="colItemName" minWidth="0.0" prefWidth="280.66668701171875" text="itemName" />
-            <TableColumn fx:id="colItemPrice" minWidth="0.0" prefWidth="327.666748046875" text="itemPrice" />
+            <TableColumn fx:id="colFoodId" prefWidth="213.33331298828125" text="foodId" />
+            <TableColumn fx:id="colFoodName" minWidth="0.0" prefWidth="280.66668701171875" text="foodName" />
+            <TableColumn fx:id="colFoodPrice" minWidth="0.0" prefWidth="327.666748046875" text="foodPrice" />
          </columns>
       </TableView>
-      <JFXTextField fx:id="txtItemId" layoutX="54.0" layoutY="300.0" onAction="#txtItemIdOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Item Id" style="-fx-background-color: white;">
+      <JFXTextField fx:id="txtFoodId" layoutX="54.0" layoutY="300.0" onAction="#txtItemIdOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Food Id" style="-fx-background-color: white;">
          <font>
             <Font size="20.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtItemName" layoutX="54.0" layoutY="390.0" onAction="#txtItemNameOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Item Name" style="-fx-background-color: white;">
+      <JFXTextField fx:id="txtFoodName" layoutX="54.0" layoutY="390.0" prefHeight="44.0" prefWidth="380.0" promptText="Food Name" style="-fx-background-color: white;">
          <font>
             <Font size="20.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtItemPrice" layoutX="53.0" layoutY="487.0" onAction="#txtItemPriceOnAction" prefHeight="44.0" prefWidth="380.0" promptText="Item Price" style="-fx-background-color: white;">
+      <JFXTextField fx:id="txtFoodPrice" layoutX="53.0" layoutY="487.0" prefHeight="44.0" prefWidth="380.0" promptText="Food Price" style="-fx-background-color: white;">
          <font>
             <Font size="20.0" />
          </font>

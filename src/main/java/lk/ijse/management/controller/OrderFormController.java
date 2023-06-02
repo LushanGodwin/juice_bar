@@ -257,12 +257,15 @@ public class OrderFormController implements Initializable {
             boolean isPlaced = PlaceOrderModel.placeOrder(oId, cusId, cartDTOList,netTotal);
             if(isPlaced) {
                 new Alert(Alert.AlertType.CONFIRMATION, "Order Placed!").show();
+                setOrderId();
+                obList.clear();
+                tblItem.refresh();
             } else {
                 new Alert(Alert.AlertType.ERROR, "Order Not Placed!").show();
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            new Alert(Alert.AlertType.ERROR, "SQL Error!").show();
+            new Alert(Alert.AlertType.ERROR, "SQL Error! "+e).show();
         }
 
 

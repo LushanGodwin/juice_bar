@@ -19,15 +19,14 @@ public class PlaceOrderModel {
 
             boolean isSaved = OrderModel.save(oId, cusId, LocalDate.now(), netTotal);
             if (isSaved) {
-                boolean isUpdated = ItemModel.updateQty(cartDTOList);
-                if (isUpdated) {
-                    boolean isOrderDetailSaved = OrderDetailModel.save(oId, cartDTOList);
-                    if (isOrderDetailSaved) {
+//                boolean isUpdated = ItemModel.updateQty(cartDTOList);
+//                if (isUpdated) {
+                boolean isOrderDetailSaved = OrderDetailModel.save(oId, cartDTOList);
+                     if (isOrderDetailSaved) {
                         con.commit();
                         return true;
                     }
                 }
-            }
             return false;
         } catch (SQLException er) {
             er.printStackTrace();

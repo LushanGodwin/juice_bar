@@ -133,7 +133,7 @@ public class CustomerFormController implements Initializable {
                 }
             }
         } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR, "Sql Error !").show();
+            new Alert(Alert.AlertType.ERROR, "Sql Error ! "+e).show();
         }
     }
 
